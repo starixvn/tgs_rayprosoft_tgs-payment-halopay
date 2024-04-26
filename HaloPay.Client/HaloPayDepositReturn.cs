@@ -1,6 +1,7 @@
 ﻿namespace Tgs.Payment.HaloPay.Client;
 public record HaloPayDepositReturn
 {
+    public decimal AfterExchangeOrderAmount { get; init; }
     public decimal OrderAmount { get; init; }
     public Guid FormId { get; init; }
 

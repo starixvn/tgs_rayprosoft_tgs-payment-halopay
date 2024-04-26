@@ -57,7 +57,8 @@ var withdrawSettings = new HaloPayWithdrawSettings(
     orderNo,
     "687354546545",
     "test",
-    "1");
+    "1",
+    1m);
 
 var withdrawReturn = await paymentClient.WithdrawAsync(
     "tgs.payment.halopay.withdraw",

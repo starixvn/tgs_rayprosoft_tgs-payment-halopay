@@ -2,6 +2,8 @@
 
 public class HaloPayWithdrawReturn
 {
+    public decimal AfterExchangeAmount { get; init; }
+
     public decimal Amount { get; init; }
 
     public Guid FormId { get; init; }

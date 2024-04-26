@@ -56,7 +56,8 @@ public class DepositTests(ITestOutputHelper testOutputHelper)
                 formId,
                 "4ucmqplxb029",
                 "",
-                "08123765216"),
+                "08123765216",
+                1m),
              new HaloPayDepositResponse(
                 500m,
                 formId,
@@ -89,6 +90,7 @@ public class DepositTests(ITestOutputHelper testOutputHelper)
             MerchantId = "H0131389964",
             ThirdPartyOrderNo = "075582657330",
             CompletionDate = "2024-04-25 16:12:26",
+            AfterExchangeOrderAmount = decimal.Parse("500.00"),
         };
 
         _ = fakePaymentServiceClient.Received(1)
@@ -145,7 +147,8 @@ public class DepositTests(ITestOutputHelper testOutputHelper)
                 formId,
                 "4ucmqplxb029",
                 "",
-                "08123765216"),
+                "08123765216",
+                1m),
              new HaloPayDepositResponse(
                 500m,
                 formId,
@@ -178,6 +181,7 @@ public class DepositTests(ITestOutputHelper testOutputHelper)
             MerchantId = "H0131389964",
             ThirdPartyOrderNo = "830165468183",
             CompletionDate = "2024-04-26 09:41:29",
+            AfterExchangeOrderAmount = decimal.Parse("500.00"),
         };
 
         _ = fakePaymentServiceClient.Received(1)

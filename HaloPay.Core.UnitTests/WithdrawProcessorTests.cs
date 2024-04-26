@@ -55,7 +55,8 @@ public class WithdrawProcessorTests
             formId,
             "687354546545",
             "test",
-            "1");
+            "1",
+            1m);
 
         var request = new WithdrawRequest
         {

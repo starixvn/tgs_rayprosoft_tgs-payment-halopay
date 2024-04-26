@@ -56,6 +56,8 @@ public class DepositController(ILogger<DepositController> logger) : ControllerBa
             return "fail";
         }
 
+        var exchangeRate = depositForm.ApplyInfo.Settings.ExchangeRate;
+
         var paymentReturn = new HaloPayDepositReturn()
         {
             OrderAmount = decimal.Parse(source.Amount),
@@ -65,6 +67,7 @@ public class DepositController(ILogger<DepositController> logger) : ControllerBa
             MerchantId = source.MerchantId,
             ThirdPartyOrderNo = source.PayOrderNo,
             CompletionDate = source.CompletionDate,
+            AfterExchangeOrderAmount = decimal.Parse(source.Amount) / exchangeRate
         };
 
         var fsm = PaymentStateMachineFactory.CreateDepositStateMachine(depositForm.Status);
@@ -84,7 +87,7 @@ public class DepositController(ILogger<DepositController> logger) : ControllerBa
                     await paymentClient.ApproveDepositAsync(
                         depositForm.Id,
                         depositForm.BrandId,
-                        paymentReturn.OrderAmount,
+                        paymentReturn.AfterExchangeOrderAmount,
                         HttpContext.RequestAborted).ConfigureAwait(false);
                 }
 

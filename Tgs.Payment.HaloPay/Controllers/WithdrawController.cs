@@ -69,6 +69,7 @@ public class WithdrawController(ILogger<WithdrawController> logger) : Controller
             CompletionDate = source.CompletionDate,
             MerchantId = source.MerchantId,
             ThirdPartyOrderNo = source.PayOrderNo,
+            AfterExchangeAmount = decimal.Parse(source.Amount) / withdrawForm.ApplyInfo.Settings.ExchangeRate,
         };
 
         var fsm = PaymentStateMachineFactory.CreateWithdrawStateMachine(withdrawForm.Status);

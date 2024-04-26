@@ -43,7 +43,8 @@ public class WithdrawTests(ITestOutputHelper testOutputHelper)
             formId,
             "687354546545",
             "test",
-            "1");
+            "1",
+            1m);
         var withdrawResponse = new HaloPayWithdrawResponse(formId, "1991783685007318458368772");
 
         var applyInfo = new HaloPayWithdrawApplyInfo(settings, withdrawResponse);
@@ -85,7 +86,8 @@ public class WithdrawTests(ITestOutputHelper testOutputHelper)
             Status = "2",
             CompletionDate = "2024-04-26 10:46:23",
             MerchantId = "H0131389964",
-            ThirdPartyOrderNo = "1991783685007318458368772"
+            ThirdPartyOrderNo = "1991783685007318458368772",
+            AfterExchangeAmount = decimal.Parse("100.00"),
         };
 
         Assert.Equal("SUCCESS", actual);
@@ -128,7 +130,8 @@ public class WithdrawTests(ITestOutputHelper testOutputHelper)
             formId,
             "687354546545",
             "test",
-            "1");
+            "1",
+            1m);
         var withdrawResponse = new HaloPayWithdrawResponse(formId, "7631783684224019603456238");
 
         var applyInfo = new HaloPayWithdrawApplyInfo(settings, withdrawResponse);
@@ -170,7 +173,8 @@ public class WithdrawTests(ITestOutputHelper testOutputHelper)
             Status = "0",
             CompletionDate = "2024-04-26 10:42:24",
             MerchantId = "H0131389964",
-            ThirdPartyOrderNo = "7631783684224019603456238"
+            ThirdPartyOrderNo = "7631783684224019603456238",
+            AfterExchangeAmount = decimal.Parse("100.00"),
         };
 
         Assert.Equal("SUCCESS", actual);

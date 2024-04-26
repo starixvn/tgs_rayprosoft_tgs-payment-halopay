@@ -16,6 +16,7 @@ using Tgs.Payment.HaloPay.MessageQueue;
 using Tgs.Payment.Protos;
 
 namespace HaloPay.Core.UnitTests;
+
 public class DepositProcessorTests
 {
     [Fact]
@@ -54,7 +55,8 @@ public class DepositProcessorTests
             formId,
             "4ucmqplxb029",
             "",
-            "08123765216");
+            "08123765216",
+            1m);
 
         var request = new DepositRequest
         {
