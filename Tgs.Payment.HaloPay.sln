@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tgs.Payment.HaloPay", "Tgs.Payment.HaloPay\Tgs.Payment.HaloPay.csproj", "{1BE8D9AC-7A4A-42E8-970F-C75D5C028FD1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6BF8511F-78A9-4FC1-A409-849489649A11}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		CodeMaid.config = CodeMaid.config
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HaloPay.Core", "HaloPay.Core\HaloPay.Core.csproj", "{A075B8D6-D1A9-4193-BD31-570387844DED}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HaloPay.Client", "HaloPay.Client\HaloPay.Client.csproj", "{072F2FD1-52CC-4174-A7FD-3B2E023A8422}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HaloPay.Core.UnitTests", "HaloPay.Core.UnitTests\HaloPay.Core.UnitTests.csproj", "{1B4320A6-318D-4506-A500-CF2B9221FD14}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HaloPayTest", "HaloPayTest\HaloPayTest.csproj", "{77E690A0-5F18-40D5-86D5-C7B35824EF24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tgs.Payment.HaloPay.IntegrationTests", "Tgs.Payment.HaloPay.IntegrationTests\Tgs.Payment.HaloPay.IntegrationTests.csproj", "{C445BB47-BF8F-4D20-9206-4CCB27796E53}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1BE8D9AC-7A4A-42E8-970F-C75D5C028FD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BE8D9AC-7A4A-42E8-970F-C75D5C028FD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BE8D9AC-7A4A-42E8-970F-C75D5C028FD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BE8D9AC-7A4A-42E8-970F-C75D5C028FD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A075B8D6-D1A9-4193-BD31-570387844DED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A075B8D6-D1A9-4193-BD31-570387844DED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A075B8D6-D1A9-4193-BD31-570387844DED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A075B8D6-D1A9-4193-BD31-570387844DED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{072F2FD1-52CC-4174-A7FD-3B2E023A8422}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{072F2FD1-52CC-4174-A7FD-3B2E023A8422}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{072F2FD1-52CC-4174-A7FD-3B2E023A8422}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{072F2FD1-52CC-4174-A7FD-3B2E023A8422}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B4320A6-318D-4506-A500-CF2B9221FD14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B4320A6-318D-4506-A500-CF2B9221FD14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B4320A6-318D-4506-A500-CF2B9221FD14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B4320A6-318D-4506-A500-CF2B9221FD14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77E690A0-5F18-40D5-86D5-C7B35824EF24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77E690A0-5F18-40D5-86D5-C7B35824EF24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77E690A0-5F18-40D5-86D5-C7B35824EF24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77E690A0-5F18-40D5-86D5-C7B35824EF24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C445BB47-BF8F-4D20-9206-4CCB27796E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C445BB47-BF8F-4D20-9206-4CCB27796E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C445BB47-BF8F-4D20-9206-4CCB27796E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C445BB47-BF8F-4D20-9206-4CCB27796E53}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CDE4FB7C-E9F4-4C94-B422-BD1B087D82AD}
+	EndGlobalSection
+EndGlobal
